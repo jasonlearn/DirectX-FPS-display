@@ -1,0 +1,53 @@
+﻿  Game.cpp
+d:\4995\directxtest\directxtest\game.cpp(45): warning C4101: 'pData': unreferenced local variable
+d:\4995\directxtest\directxtest\game.cpp(44): warning C4101: 'rect': unreferenced local variable
+  Main.cpp
+d:\4995\directxtest\directxtest\main.cpp(42): warning C4311: 'type cast': pointer truncation from 'Game *' to 'LONG'
+d:\4995\directxtest\directxtest\main.cpp(42): warning C4302: 'type cast': truncation from 'Game *' to 'LONG'
+d:\4995\directxtest\directxtest\main.cpp(66): warning C4244: 'return': conversion from 'WPARAM' to 'int', possible loss of data
+  FrameRate.cpp
+d:\4995\directxtest\directxtest\framerate.cpp(45): warning C4101: 'pData': unreferenced local variable
+d:\4995\directxtest\directxtest\framerate.cpp(44): warning C4101: 'rect': unreferenced local variable
+  DrawLine.cpp
+d:\4995\directxtest\directxtest\drawline.cpp(18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+d:\4995\directxtest\directxtest\drawline.cpp(19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Background.cpp
+  Generating Code...
+Game.obj : error LNK2005: "public: __cdecl Game::Game(struct HWND__ *)" (??0Game@@QEAA@PEAUHWND__@@@Z) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: __cdecl Game::Game(void)" (??0Game@@QEAA@XZ) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: __cdecl Game::~Game(void)" (??1Game@@QEAA@XZ) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: int __cdecl Game::GameInit(void)" (?GameInit@Game@@QEAAHXZ) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: int __cdecl Game::GameLoop(void)" (?GameLoop@Game@@QEAAHXZ) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: int __cdecl Game::GameShutdown(void)" (?GameShutdown@Game@@QEAAHXZ) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: int __cdecl Game::InitDirect3DDevice(struct HWND__ *,int,int,int,enum _D3DFORMAT,struct IDirect3D9 *,struct IDirect3DDevice9 * *)" (?InitDirect3DDevice@Game@@QEAAHPEAUHWND__@@HHHW4_D3DFORMAT@@PEAUIDirect3D9@@PEAPEAUIDirect3DDevice9@@@Z) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: int __cdecl Game::LoadBitmapToSurface(wchar_t *,struct IDirect3DSurface9 * *,struct IDirect3DDevice9 *)" (?LoadBitmapToSurface@Game@@QEAAHPEA_WPEAPEAUIDirect3DSurface9@@PEAUIDirect3DDevice9@@@Z) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: int __cdecl Game::Render(void)" (?Render@Game@@QEAAHXZ) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: long __cdecl Game::RestoreGraphics(void)" (?RestoreGraphics@Game@@QEAAJXZ) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: static __int64 __cdecl Game::StaticWndProc(struct HWND__ *,unsigned int,unsigned __int64,__int64)" (?StaticWndProc@Game@@SA_JPEAUHWND__@@I_K_J@Z) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: long __cdecl Game::ValidateDevice(void)" (?ValidateDevice@Game@@QEAAJXZ) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: __int64 __cdecl Game::WndProc(struct HWND__ *,unsigned int,unsigned __int64,__int64)" (?WndProc@Game@@QEAA_JPEAUHWND__@@I_K_J@Z) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: struct HWND__ * __cdecl Game::getHandle(void)" (?getHandle@Game@@QEAAPEAUHWND__@@XZ) already defined in FrameRate.obj
+Game.obj : error LNK2005: "public: void __cdecl Game::setHandle(struct HWND__ *)" (?setHandle@Game@@QEAAXPEAUHWND__@@@Z) already defined in FrameRate.obj
+FrameRate.obj : error LNK2019: unresolved external symbol D3DXLoadSurfaceFromFileW referenced in function "public: int __cdecl Game::LoadBitmapToSurface(wchar_t *,struct IDirect3DSurface9 * *,struct IDirect3DDevice9 *)" (?LoadBitmapToSurface@Game@@QEAAHPEA_WPEAPEAUIDirect3DSurface9@@PEAUIDirect3DDevice9@@@Z)
+Game.obj : error LNK2001: unresolved external symbol D3DXLoadSurfaceFromFileW
+FrameRate.obj : error LNK2019: unresolved external symbol D3DXLoadSurfaceFromSurface referenced in function "public: int __cdecl Game::GameInit(void)" (?GameInit@Game@@QEAAHXZ)
+Game.obj : error LNK2001: unresolved external symbol D3DXLoadSurfaceFromSurface
+FrameRate.obj : error LNK2019: unresolved external symbol "public: __cdecl FrameRate::FrameRate(void)" (??0FrameRate@@QEAA@XZ) referenced in function "public: __cdecl Game::Game(struct HWND__ *)" (??0Game@@QEAA@PEAUHWND__@@@Z)
+Game.obj : error LNK2001: unresolved external symbol "public: __cdecl FrameRate::FrameRate(void)" (??0FrameRate@@QEAA@XZ)
+FrameRate.obj : error LNK2019: unresolved external symbol "public: __cdecl FrameRate::FrameRate(struct IDirect3DDevice9 *)" (??0FrameRate@@QEAA@PEAUIDirect3DDevice9@@@Z) referenced in function "public: int __cdecl Game::GameInit(void)" (?GameInit@Game@@QEAAHXZ)
+Game.obj : error LNK2001: unresolved external symbol "public: __cdecl FrameRate::FrameRate(struct IDirect3DDevice9 *)" (??0FrameRate@@QEAA@PEAUIDirect3DDevice9@@@Z)
+FrameRate.obj : error LNK2019: unresolved external symbol "public: __cdecl FrameRate::~FrameRate(void)" (??1FrameRate@@QEAA@XZ) referenced in function "int `public: __cdecl Game::Game(struct HWND__ *)'::`1'::dtor$0" (?dtor$0@?0???0Game@@QEAA@PEAUHWND__@@@Z@4HA)
+Game.obj : error LNK2001: unresolved external symbol "public: __cdecl FrameRate::~FrameRate(void)" (??1FrameRate@@QEAA@XZ)
+FrameRate.obj : error LNK2019: unresolved external symbol "public: void __cdecl FrameRate::FrameCount(void)" (?FrameCount@FrameRate@@QEAAXXZ) referenced in function "public: int __cdecl Game::GameLoop(void)" (?GameLoop@Game@@QEAAHXZ)
+Game.obj : error LNK2001: unresolved external symbol "public: void __cdecl FrameRate::FrameCount(void)" (?FrameCount@FrameRate@@QEAAXXZ)
+FrameRate.obj : error LNK2019: unresolved external symbol "public: long __cdecl FrameRate::InitTiming(void)" (?InitTiming@FrameRate@@QEAAJXZ) referenced in function "public: int __cdecl Game::GameInit(void)" (?GameInit@Game@@QEAAHXZ)
+Game.obj : error LNK2001: unresolved external symbol "public: long __cdecl FrameRate::InitTiming(void)" (?InitTiming@FrameRate@@QEAAJXZ)
+FrameRate.obj : error LNK2019: unresolved external symbol "public: long __cdecl FrameRate::LoadAlphabet(wchar_t *,int,int)" (?LoadAlphabet@FrameRate@@QEAAJPEA_WHH@Z) referenced in function "public: int __cdecl Game::GameInit(void)" (?GameInit@Game@@QEAAHXZ)
+Game.obj : error LNK2001: unresolved external symbol "public: long __cdecl FrameRate::LoadAlphabet(wchar_t *,int,int)" (?LoadAlphabet@FrameRate@@QEAAJPEA_WHH@Z)
+FrameRate.obj : error LNK2019: unresolved external symbol "public: long __cdecl FrameRate::UnloadAlphabet(void)" (?UnloadAlphabet@FrameRate@@QEAAJXZ) referenced in function "public: int __cdecl Game::GameShutdown(void)" (?GameShutdown@Game@@QEAAHXZ)
+Game.obj : error LNK2001: unresolved external symbol "public: long __cdecl FrameRate::UnloadAlphabet(void)" (?UnloadAlphabet@FrameRate@@QEAAJXZ)
+FrameRate.obj : error LNK2019: unresolved external symbol "public: void __cdecl FrameRate::PrintFrameRate(int,int,int,unsigned long,unsigned long *,int)" (?PrintFrameRate@FrameRate@@QEAAXHHHKPEAKH@Z) referenced in function "public: int __cdecl Game::Render(void)" (?Render@Game@@QEAAHXZ)
+Game.obj : error LNK2001: unresolved external symbol "public: void __cdecl FrameRate::PrintFrameRate(int,int,int,unsigned long,unsigned long *,int)" (?PrintFrameRate@FrameRate@@QEAAXHHHKPEAKH@Z)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+D:\4995\DirectXtest\x64\Debug\DirectXtest.exe : fatal error LNK1120: 11 unresolved externals
